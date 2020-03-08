@@ -21,8 +21,8 @@
 
 @media only screen and (max-width: 600px) {
   .home-blurb {
-    font-size: 28px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 200;
     letter-spacing: -0.02em;
     line-height: 45px;
   }
@@ -32,6 +32,10 @@
     font-size: 14px;
     text-align: center;
     background: inherit;
+  }
+
+  .countdown {
+    display: none;
   }
 }
 
