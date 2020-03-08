@@ -21,10 +21,10 @@
 
 @media only screen and (max-width: 600px) {
   .home-blurb {
-    font-size: 38px;
-    font-weight: 500;
+    font-size: 34px;
+    font-weight: 400;
     letter-spacing: -0.02em;
-    line-height: 50px;
+    line-height: 45px;
   }
 
   .home-blurb-support {
@@ -46,7 +46,7 @@
   text-align: center;
   background: inherit;
   font-weight: 200;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .home-blurb-action {
