@@ -37,6 +37,24 @@
   .countdown {
     display: none;
   }
+
+  .home-blurb-action {
+    border: none;
+    max-width: 200px;
+    letter-spacing: 2px;
+    padding-top: 16px;
+    border-radius: 500px;
+    line-height: 1;
+    padding: 16px 48px 18px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    animation: none;
+    font-size: 8px;
+    font-weight: bold;
+  }
 }
 
 .home-blurb-support {
