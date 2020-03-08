@@ -1,0 +1,328 @@
+/* 
+
+We load our fonts here... 
+Don't give a sh*t about it.
+
+*/
+
+@font-face {
+  font-family: "Fira Sans Regular";
+  src: url("../fonts/FiraSans-Regular.otf");
+}
+
+@font-face {
+  font-family: "Fira Sans Heavy";
+  src: url("../fonts/FiraSans-Heavy.otf");
+}
+
+@font-face {
+  font-family: "Fira Sans HeavyItalic";
+  src: url("../fonts/FiraSans-HeavyItalic.otf");
+}
+
+
+/* 
+
+The properties that we want every element to follow...
+if the HTML file loads this CSS file in the first place.
+
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: "Fira Sans Regular";
+}
+
+/* Themes for the whole webpage to follow, except the Notes viewer */
+.themeable {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.theme-light {
+  background-color: #3492AE;
+  color: #FFFFFF;
+}
+
+.theme-dark {
+  background-color:#2C2F33;
+  color: #FFFFFF;
+}
+
+.theme-pink {
+  background-color: #FEC5E5;
+  color: #FFFFFF;
+}
+
+/* The menubar of the app, visible on almost every page. */
+
+.global-menubar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* The logo of the website in the menubar */
+
+.global-menubar-logo {
+  width: 175px;
+  height: auto;
+  padding: 6px 15px;
+  float: left;
+}
+
+.global-menubar-logo:hover {
+  cursor: pointer;
+}
+
+/* If the device is a mobile, collapse the location indicatior */
+
+@media only screen and (max-width: 600px) {
+  .global-menubar-location {
+    display: none;
+  }
+
+  .global-menubar-logo {
+    width: 175px;
+    height: auto;
+    padding: 6px 15px;
+    float: left;
+  }
+}
+
+/* Location indicator, e.g Home, Notes, etc. */
+
+.global-menubar-location {
+  font-size: 26px;
+  float: left;
+  padding: 28px 10px;
+}
+
+/* Hamburger menu button */
+
+.global-menubar-hamburger {
+  padding: 19px 15px;
+  float: right;
+}
+
+.global-menubar-hamburger:hover {
+  cursor: pointer;
+}
+
+/* The acual hamburger menu itself */
+
+.theme-light .global-hamburger {
+  background: #CB6D51;
+}
+
+.theme-dark .global-hamburger {
+  background: grey;
+}
+
+.theme-pink .global-hamburger {
+  background: #013A1A;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .global-hamburger {
+    z-index: 3000;
+    display: flex;
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: 1;
+  }
+
+  .global-hamburger-itemcontainer ul {
+    list-style: none;
+    font-weight: 100;
+  }
+
+  .global-hamburger-close {
+    position: absolute;
+    width: 24px;
+    height: auto;
+    top: 10px;
+    left: 10px;
+    float: left;
+  }
+}
+
+.global-hamburger {
+  z-index: 3000;
+  display: flex;
+  position: fixed;
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 1;
+}
+
+.global-hamburger-close {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  top: 12px;
+  left: 12px;
+  float: left;
+}
+
+.global-hamburger-close:hover {
+  cursor: pointer;
+}
+
+.global-hamburger-itemcontainer {
+  width: 100%;
+  height: 80vh;
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .global-hamburger-itemcontainer ul li{
+    list-style: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.global-hamburger-itemcontainer ul {
+  list-style: none;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.global-hamburger-itemcontainer ul li {
+  padding: 12px 0;
+}
+
+.global-hamburger-items a {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+
+.global-hamburger-items a:hover {
+  cursor: pointer;
+  background-color: #7289DA;
+}
+.global-hamburger-state-hidden, .global-hamburger-state-visible {
+  transition: left 0.8s;
+}
+
+.global-hamburger-state-hidden {
+  left: 100%;
+}
+
+.global-hamburger-state-visible {
+  left: 60%;
+}
+
+.global-main {
+  overflow-y: auto;
+  position: absolute;
+  top: 88px;
+  width: 100%;
+  height: auto;
+}
+
+ /* Dropdown Button */
+ .global-dropbtn {
+  background-color: grey;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Dropdown button on hover & focus */
+.global-dropbtn:hover, .global-dropbtn:focus {
+  background-color: #7289DA;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.global-dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.global-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  font-size: 20px;
+  min-width: 250px;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  opacity: 0.9;
+}
+@media only screen and (max-width: 600px) {
+  .global-dropbtn {
+    background-color: grey;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .global-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    font-size: 12px;
+    min-width: 100px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0.9;
+  }
+}
+/* Links inside the dropdown */
+.global-dropdown-content a {
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.global-dropdown-content a:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;} 
+
+.note-container {
+  position: absolute;
+  top: 13%;
+  left: 0%;
+  width: 100%;
+  height:87%;
+  border: 0;
+}
+
+.note-container-state-visible {
+  z-index: 100;
+}
+
+.note-container-state-hidden {
+  display: none;
+}

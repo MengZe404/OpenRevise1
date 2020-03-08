@@ -1,0 +1,69 @@
+.home-blurb-container {
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.home-blurb {
+  font-family: "Fira Sans Heavy";
+  font-size: 58px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 85px;
+  text-align: center;
+  background: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-blurb {
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 50px;
+  }
+
+  .home-blurb-support {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    background: inherit;
+  }
+}
+
+.home-blurb-support {
+  margin-top: 10px;
+  text-align: center;
+  background: inherit;
+}
+
+.countdown {
+  margin-top: 10px;
+  text-align: center;
+  background: inherit;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.home-blurb-action {
+  border: none;
+  max-width: 220px;
+  letter-spacing: 2px;
+  padding-top: 16px;
+  border-radius: 500px;
+  line-height: 1;
+  padding: 16px 48px 18px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+
+.home-blurb-action:hover {
+  cursor: pointer;
+}

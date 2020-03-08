@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Open Revise</title>
+    <meta name="description" content="Home of IGCSE revision. Past papers, mark schemes, and subject notes.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="shared/styles/gh-fork-ribbon.css">
+    <link rel="stylesheet" href="shared/styles/global.css">
+    <link rel="stylesheet" href="shared/styles/home.css">
+  </head>
+  <body class="themeable theme-dark">
+    <div class="global-hamburger global-hamburger-state-hidden">
+      <img class="global-hamburger-close" src="shared/icons/x-50.png">
+      <div class="global-hamburger-itemcontainer">
+        <ul class="global-hamburger-items">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <div class="global-dropdown">
+              <button class="global-dropbtn" onclick="dropdown_menu()">Notes</button>
+              <div id="myDropdown" class="global-dropdown-content">
+                <a type="text" id="eco" name="note_link" link="shared/notes/Pearson Edexcel International GCSE Revision - Economics (9-1).html" onclick="get_iframe(document.getElementById('eco').getAttribute('id'))"> Economics </a>
+                <a type="text" id="phy" name="note_link" link="shared/notes/Physics Note.html" onclick="get_iframe(document.getElementById('phy').getAttribute('id'))"> Physics </a>
+                <a>Link 3</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">Past Papers</a>
+          </li>
+          <li>
+            <a href="#">Settings</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <header class="global-menubar">
+      <a href="index.html">
+        <img class="global-menubar-logo" src="shared/logos/or-logo.png">
+      </a>
+      <h1 class="global-menubar-location">| Home</h1>
+      <img class="global-menubar-hamburger" src="shared/icons/menu-50.png">
+    </header>
+    <div class="home-blurb-container">
+      <h2 class="themeable theme-light home-blurb">Welcome to Open Revise</h2>
+      <h3 class="themeable theme-light home-blurb-support"> The open source revision website for everyone</h3>
+      <button class="home-blurb-action">Get Started</button>
+      <br>
+      <h2 class="themeable theme-light countdown" id="countdown"></h2>
+    </div>
+    <main>
+      <iframe class="note-container note-container-state-hidden" id="note_iframe"></iframe>
+    </main>
+    <a class="github-fork-ribbon left-bottom fixed github-fork-ribbon-state-visible" href="https://github.com/jkelol111/OpenRevise" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    <script src="shared/scripts/library/ua-parser.min.js"></script>
+    <script src="shared/scripts/menubar.js"></script>
+    <script src="shared/scripts/home.js"></script>
+    <script src="shared/scripts/dropdown.js"></script>
+  </body>
+</html>
