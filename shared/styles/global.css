@@ -320,7 +320,7 @@ if the HTML file loads this CSS file in the first place.
 }
 
 .note-container-state-visible {
-  z-index: 1000;
+  z-index: 10000000000000000000;
 }
 
 .note-container-state-hidden {
@@ -328,9 +328,9 @@ if the HTML file loads this CSS file in the first place.
 }
 
 .global-clicking-space {
-  width: 60%;
+  position: absolute;
+  width: 70%;
   height: 100%;
-  visibility: hidden;
   float: left;
-  z-index: 20000;
+  z-index: 1000;
 }

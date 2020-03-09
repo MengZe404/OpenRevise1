@@ -7,16 +7,15 @@ document.querySelector(".home-blurb-action").addEventListener("click", () => {
   document.querySelector(".github-fork-ribbon").classList.add("github-fork-ribbon-state-hidden");
 });
 
-document.querySelector(".home-blurb-container").addEventListener("click", () => {
-  document.querySelector(".global-hamburger").classList.remove("global-hamburger-state-visible");
-  document.querySelector(".global-hamburger").classList.add("global-hamburger-state-hidden");
-});
-
 document.querySelector(".global-dropdown-content").addEventListener("click", () => {
   document.querySelector(".global-hamburger").classList.add("global-hamburger-state-hidden");
   document.querySelector(".global-hamburger").classList.remove("global-hamburger-state-visible");
 });
 
+document.querySelector(".global-clicking-space").addEventListener("click", () => {
+  document.querySelector(".global-hamburger").classList.add("global-hamburger-state-hidden");
+  document.querySelector(".global-hamburger").classList.remove("global-hamburger-state-visible");
+});
 // Set the date we're counting down to
 const completionDate = new Date("May 1, 2020 00:00:00").getTime();
 
@@ -45,3 +44,4 @@ let countdownInterval = setInterval(function() {
     document.getElementById(".countdown").textContent = "EXPIRED";
   }
 }, 1000);
+

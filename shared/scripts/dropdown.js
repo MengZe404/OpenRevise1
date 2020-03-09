@@ -25,10 +25,6 @@ document.querySelector(".global-dropdown-content").addEventListener("click", () 
   document.querySelector(".github-fork-ribbon").classList.add("github-fork-ribbon-state-hidden");
 });
 
-document.querySelector(".global-clicking-space").addEventListener("click", () => {
-  document.querySelector(".global-hamburger").classList.remove("global-hamburger-state-visible");
-  document.querySelector(".global-hamburger").classList.add("global-hamburger-state-hidden");
-});
 
 function get_iframe(id) {
     window.link = document.getElementById(id).getAttribute("link");

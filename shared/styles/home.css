@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   width: 1000px;
+  z-index: 1500;
 }
 
 .home-blurb {
