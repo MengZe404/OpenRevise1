@@ -15,6 +15,7 @@
   font-size: 13px;
   text-decoration: none;
   text-indent: -999999px;
+  z-index: 100000;
 }
 
 .github-fork-ribbon.fixed {
