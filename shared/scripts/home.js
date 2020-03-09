@@ -16,6 +16,12 @@ document.querySelector(".global-clicking-space").addEventListener("click", () =>
   document.querySelector(".global-hamburger").classList.add("global-hamburger-state-hidden");
   document.querySelector(".global-hamburger").classList.remove("global-hamburger-state-visible");
 });
+
+document.querySelector(".global-clicking-space-1").addEventListener("click", () => {
+  document.querySelector(".global-hamburger").classList.add("global-hamburger-state-hidden");
+  document.querySelector(".global-hamburger").classList.remove("global-hamburger-state-visible");
+});
+
 // Set the date we're counting down to
 const completionDate = new Date("May 1, 2020 00:00:00").getTime();
 
