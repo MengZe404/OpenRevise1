@@ -1,7 +1,7 @@
 function switchTheme() {
-    selectTheme();
+    // selectTheme();
     if (!localStorage.getItem("OpenReviseTheme")) {
-        localStorage.setItem("OpenReviseTheme", "'" + theme.value + "'");
+        localStorage.setItem("OpenReviseTheme", "dark");
     }
     document.querySelector(".themeable").classList.remove("theme-dark", "theme-light")
     if(["dark", "light"].indexOf(localStorage.getItem("OpenReviseTheme")) > -1) {
@@ -12,8 +12,8 @@ function switchTheme() {
     }
 }
 
-function selectTheme() {
-    var sel = document.getElementById('theme-selector');
-    var theme = sel.options[sel.selectedIndex];
-    return theme.value
-}
+// function selectTheme() {
+//     var sel = document.getElementById('theme-selector');
+//     var theme = sel.options[sel.selectedIndex];
+//     return theme.value
+// }
