@@ -138,7 +138,7 @@ if the HTML file loads this CSS file in the first place.
     text-align: center;
     align-items: center;
     flex-wrap: wrap;
-    opacity: 1;
+    opacity: 0.95;
   }
 
   .global-hamburger-itemcontainer ul {
@@ -165,7 +165,7 @@ if the HTML file loads this CSS file in the first place.
   text-align: center;
   align-items: center;
   flex-wrap: wrap;
-  opacity: 1;
+  opacity: 0.95;
 }
 
 .global-hamburger-close {
@@ -325,4 +325,12 @@ if the HTML file loads this CSS file in the first place.
 
 .note-container-state-hidden {
   display: none;
+}
+
+.global-clicking-space {
+  width: 60%;
+  height: 100%;
+  visibility: hidden;
+  float: left;
+  z-index: 2000;
 }

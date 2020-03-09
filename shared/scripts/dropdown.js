@@ -18,19 +18,25 @@ function dropdown_menu() {
     }
   } 
 
-  document.querySelector(".global-dropdown-content").addEventListener("click", () => {
-    document.querySelector(".note-container").classList.remove("note-container-state-hidden");
-    document.querySelector(".note-container").classList.add("note-container-state-visible");
-    document.querySelector(".github-fork-ribbon").classList.remove("github-fork-ribbon-state-visible");
-    document.querySelector(".github-fork-ribbon").classList.add("github-fork-ribbon-state-hidden");
-  })
+document.querySelector(".global-dropdown-content").addEventListener("click", () => {
+  document.querySelector(".note-container").classList.remove("note-container-state-hidden");
+  document.querySelector(".note-container").classList.add("note-container-state-visible");
+  document.querySelector(".github-fork-ribbon").classList.remove("github-fork-ribbon-state-visible");
+  document.querySelector(".github-fork-ribbon").classList.add("github-fork-ribbon-state-hidden");
+});
+
+document.querySelector(".global-clicking-space").addEventListener("click", () => {
+  document.querySelector(".global-hamburger").classList.remove("global-hamburger-state-visible");
+  document.querySelector(".global-hamburger").classList.add("global-hamburger-state-hidden");
+});
 
 function get_iframe(id) {
     window.link = document.getElementById(id).getAttribute("link");
-    creat_iframe();
-  }
+    create_iframe();
+};
 
-function creat_iframe() {
+function create_iframe() {
     var ifrm = document.getElementById('note_iframe');
     ifrm.setAttribute("src", window.link);
-  }
+};
+
