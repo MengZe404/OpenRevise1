@@ -303,7 +303,7 @@ if the HTML file loads this CSS file in the first place.
 
 /* Change color of dropdown links on hover */
 .global-dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #7289DA;
   cursor: pointer;
 }
 
@@ -320,7 +320,7 @@ if the HTML file loads this CSS file in the first place.
 }
 
 .note-container-state-visible {
-  z-index: 100;
+  z-index: 1000;
 }
 
 .note-container-state-hidden {
