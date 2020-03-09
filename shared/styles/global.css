@@ -332,5 +332,5 @@ if the HTML file loads this CSS file in the first place.
   height: 100%;
   visibility: hidden;
   float: left;
-  z-index: 2000;
+  z-index: 20000;
 }
