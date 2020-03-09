@@ -23,6 +23,8 @@ document.querySelector(".global-dropdown-content").addEventListener("click", () 
   document.querySelector(".note-container").classList.add("note-container-state-visible");
   document.querySelector(".github-fork-ribbon").classList.remove("github-fork-ribbon-state-visible");
   document.querySelector(".github-fork-ribbon").classList.add("github-fork-ribbon-state-hidden");
+  document.querySelector(".global-clicking-space-1").classList.remove("global-clicking-space-1-state-visible");
+  document.querySelector(".global-clicking-space-1").classList.add("global-clicking-space-1-state-hidden");
 });
 
 
