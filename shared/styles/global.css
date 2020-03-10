@@ -100,7 +100,7 @@ if the HTML file loads this CSS file in the first place.
 /* Hamburger menu button */
 
 .global-menubar-hamburger {
-  padding: 8px 15px;
+  padding: 12px 15px;
   float: right;
 }
 
@@ -399,4 +399,8 @@ if the HTML file loads this CSS file in the first place.
 .global-setting-list a:hover {
   cursor: pointer;
   background-color: #7289DA;
+}
+
+.global-about-page-link {
+  text-emphasis: none;
 }
