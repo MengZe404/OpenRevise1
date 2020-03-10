@@ -1,10 +1,3 @@
-<!-- 
-  To DO List:
-    * Maditation Music Player
-    * More Notes
-    * Different Themes (if possible)
- -->
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -16,7 +9,7 @@
     <link rel="stylesheet" href="shared/styles/global.css">
     <link rel="stylesheet" href="shared/styles/home.css">
   </head>
-  <body id="body" class="themeable theme-black">
+  <body id="body" class="themeable">
     <div class="global-clicking-space"></div>
     <div class="global-clicking-space-1 global-clicking-space-1-state-hidden"></div>
     <div class="global-hamburger global-hamburger-state-hidden">
@@ -42,13 +35,13 @@
             <a href="#">Past Papers</a>
           </li>
           <li>
-            <div class="global-setting-list" onclick="setting()">
-              <a id="setting">Setting</a>
+            <!-- Theme selection -->
+            <div class="global-setting-list">
+              <a id="setting" onclick="setting()">Setting</a>
               <div id="popUpDiv">
                   <select id="theme-selector" class="global-theme-selector global-theme-selector-state-hidden">
-                      <option class="global-theme-option" name="theme" value="dark">Dark</option>
-                      <option class="global-theme-option" name="theme" value="light">Light</option>
-                      <option class="global-theme-option" name="theme" value="pink">Pink</option>
+                      <option class="global-theme-option" name="theme" value="dark" onclick="switchTheme()">Dark</option>
+                      <option class="global-theme-option" name="theme" value="light" onclick="switchTheme()">Light</option>
                   </select>
               </div>
             </div>
@@ -69,6 +62,7 @@
       <h1 class="global-menubar-location">| Home</h1>
       <img class="global-menubar-hamburger" src="shared/icons/menu-50.png">
     </header>
+    <!-- Home page main content -->
     <div class="home-blurb-container">
       <h2 class="themeable home-blurb">Welcome to Open Revise</h2>
       <h3 class="themeable home-blurb-support"> The open source revision website for everyone</h3>

@@ -38,7 +38,7 @@ if the HTML file loads this CSS file in the first place.
 
 /* Themes for the whole webpage to follow, except the Notes viewer */
 .themeable {
-  transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.25s;
 }
 
 .theme-light {
@@ -53,21 +53,20 @@ if the HTML file loads this CSS file in the first place.
 
 
 /* The menubar of the app, visible on almost every page. */
-
 .global-menubar {
   position: fixed;
   top: 0px;
   width: 100%;
   z-index: 3;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: black;
 }
 
 /* The logo of the website in the menubar */
 
 .global-menubar-logo {
-  width: 145px;
+  width: 155px;
   height: auto;
-  padding: 6px 15px;
+  padding: 8px 18px;
   float: left;
 }
 
@@ -95,13 +94,13 @@ if the HTML file loads this CSS file in the first place.
 .global-menubar-location {
   font-size: 26px;
   float: left;
-  padding: 20px 10px;
+  padding: 22px 10px;
 }
 
 /* Hamburger menu button */
 
 .global-menubar-hamburger {
-  padding: 10px 15px;
+  padding: 8px 15px;
   float: right;
 }
 

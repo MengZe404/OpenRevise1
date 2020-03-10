@@ -1,5 +1,7 @@
+// Doesn't work
+
 function switchTheme() {
-    // selectTheme();
+    selectTheme();
     if (!localStorage.getItem("OpenReviseTheme")) {
         localStorage.setItem("OpenReviseTheme", "dark");
     }
@@ -15,5 +17,5 @@ function switchTheme() {
 function selectTheme() {
     var sel = document.getElementById('theme-selector');
     var theme = sel.options[sel.selectedIndex];
-    localStorage.setItem("OpenReviseTheme", theme)
+    localStorage.setItem("OpenReviseTheme", theme.value);
 }
