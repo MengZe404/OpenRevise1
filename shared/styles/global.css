@@ -207,6 +207,7 @@ if the HTML file loads this CSS file in the first place.
   cursor: pointer;
   background-color: #7289DA;
 }
+
 .global-hamburger-state-hidden, .global-hamburger-state-visible {
   transition: left 0.8s;
 }
@@ -365,24 +366,38 @@ if the HTML file loads this CSS file in the first place.
     height: 38%;
     float: right;
   }
+
+}
+.global-theme-selector {
+  background-color: white;
 }
 
-.theme-selector-state-visible {
+.global-theme-selector-state-visible {
   display: inline;
 }
 
-.theme-selector-state-hidden {
+.global-theme-selector-state-hidden {
   display: none;
 }
 
-.theme-option {
+.global-theme-option {
   font: bold;
 }
 
 @media only screen and (max-width: 600px) {
-  .theme-option {
+  .global-theme-option {
     font-size: 4px;
     font: initial;
   }
 }
 
+.global-setting-list a {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+
+.global-setting-list a:hover {
+  cursor: pointer;
+  background-color: #7289DA;
+}

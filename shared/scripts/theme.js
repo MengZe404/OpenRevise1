@@ -12,8 +12,8 @@ function switchTheme() {
     }
 }
 
-// function selectTheme() {
-//     var sel = document.getElementById('theme-selector');
-//     var theme = sel.options[sel.selectedIndex];
-//     return theme.value
-// }
+function selectTheme() {
+    var sel = document.getElementById('theme-selector');
+    var theme = sel.options[sel.selectedIndex];
+    localStorage.setItem("OpenReviseTheme", theme)
+}
