@@ -313,10 +313,10 @@ if the HTML file loads this CSS file in the first place.
 
 .note-container {
   position: absolute;
-  top: 11.5%;
+  top: 11%;
   left: 0%;
   width: 100%;
-  height:89.5%;
+  height:90%;
   border: 0;
 }
 
