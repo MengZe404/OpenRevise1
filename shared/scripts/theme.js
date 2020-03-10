@@ -1,5 +1,3 @@
-// Doesn't work
-
 function switchTheme() {
     selectTheme();
     if (!localStorage.getItem("OpenReviseTheme")) {
