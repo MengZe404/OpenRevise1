@@ -1,0 +1,31 @@
+/* Themes for the entire website */
+
+.themeable {
+transition: background-color 0.5s, color 0.25s;
+}
+
+.theme-light {
+background-color: #3492AE;
+color: #FFFFFF;
+}
+
+.theme-dark {
+background-color:#2C2F33;
+color: #FFFFFF;
+}
+
+.theme-light .global-hamburger{
+background: #CB6D51;
+}
+
+.theme-dark .global-hamburger {
+background: grey;
+}
+
+.theme-light .global-dropbtn {
+background: #CB6D51;
+}
+
+.theme-dark .global-dropbtn {
+background: grey;
+}

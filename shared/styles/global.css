@@ -37,20 +37,6 @@ if the HTML file loads this CSS file in the first place.
 }
 
 /* Themes for the whole webpage to follow, except the Notes viewer */
-.themeable {
-  transition: background-color 0.5s, color 0.25s;
-}
-
-.theme-light {
-  background-color: #3492AE;
-  color: #FFFFFF;
-}
-
-.theme-dark {
-  background-color:#2C2F33;
-  color: #FFFFFF;
-}
-
 
 /* The menubar of the app, visible on almost every page. */
 .global-menubar {
@@ -109,14 +95,6 @@ if the HTML file loads this CSS file in the first place.
 }
 
 /* The acual hamburger menu itself */
-
-.theme-light .global-hamburger{
-  background: #CB6D51;
-}
-
-.theme-dark .global-hamburger {
-  background: grey;
-}
 
 @media only screen and (max-width: 600px) {
 
@@ -227,17 +205,8 @@ if the HTML file loads this CSS file in the first place.
   height: auto;
 }
 
- /* Dropdown Button */
-
- .theme-light .global-dropbtn {
-  background: #CB6D51;
-}
-
-.theme-dark .global-dropbtn {
-  background: grey;
-}
-
- .global-dropbtn {
+/* Dropdown Button */
+.global-dropbtn {
   background-color: grey;
   color: white;
   font-size: 36px;
