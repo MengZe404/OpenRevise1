@@ -1,10 +1,10 @@
 "use strict"
 function switchTheme() {
-    selectTheme();
+    localStorage.setItem("OpenReviseTheme", document.getElementById("theme-selector").value);
     if (!localStorage.getItem("OpenReviseTheme")) {
         localStorage.setItem("OpenReviseTheme", "dark");
     }
-    document.querySelector(".themeable").classList.remove("theme-dark", "theme-light")
+    document.querySelector(".themeable").classList.remove("theme-dark", "theme-light");
     if(["dark", "light"].indexOf(localStorage.getItem("OpenReviseTheme")) > -1) {
         document.querySelector(".themeable").classList.add("theme-"+localStorage.getItem("OpenReviseTheme"));
     } else {
@@ -13,8 +13,6 @@ function switchTheme() {
     }
 }
 
-function selectTheme() {
-    var sel = document.getElementById('theme-selector');
-    var theme = sel.options[sel.selectedIndex];
-    localStorage.setItem("OpenReviseTheme", theme.value);
+document.getElementById("theme-selector").onchange = (e) => {
+    switchTheme();
 }

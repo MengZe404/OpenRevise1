@@ -1,6 +1,8 @@
 "use strict"
 
+try { 
 switchTheme();
+} catch (err) {console.error(err)}
 
 document.querySelector(".home-blurb-action").addEventListener("click", () => {
   document.querySelector(".global-hamburger").classList.remove("global-hamburger-state-hidden");

@@ -1,4 +1,4 @@
-"use strict"
+"use strict"    
 function setting() {
     document.querySelector(".global-setting-list").addEventListener("click", () => {
         document.querySelector(".global-theme-selector").classList.remove("global-theme-selector-state-hidden");
