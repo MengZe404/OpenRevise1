@@ -201,25 +201,10 @@ if the HTML file loads this CSS file in the first place.
   overflow-y: auto;
   position: absolute;
   top: 88px;
-  width: 100%;
-  height: auto;
 }
 
-/* Dropdown Button */
 .global-dropbtn {
-  background-color: grey;
-  color: white;
-  font-size: 36px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-}
-
-
-/* Dropdown button on hover & focus */
-.global-dropbtn:hover, .global-dropbtn:focus {
-  background-color: #7289DA;
-  cursor: pointer;
+  position: relative;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -242,15 +227,6 @@ if the HTML file loads this CSS file in the first place.
   opacity: 0.9;
 }
 @media only screen and (max-width: 600px) {
-  .global-dropbtn {
-    background-color: grey;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-  }
-  
   .global-dropdown-content {
     display: none;
     position: absolute;
@@ -337,7 +313,7 @@ if the HTML file loads this CSS file in the first place.
   }
 }
 
-/* Theme selector for users to switch */
+/* Theme selector for users to switch themes */
 .global-theme-selector {
   background-color: white;
 }
@@ -351,7 +327,7 @@ if the HTML file loads this CSS file in the first place.
 }
 
 .global-theme-option {
-  font: bold;
+  text-emphasis: none;
 }
 
 @media only screen and (max-width: 600px) {
