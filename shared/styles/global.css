@@ -280,6 +280,7 @@ if the HTML file loads this CSS file in the first place.
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;} 
 
+/* All notes are here in iframe */
 .note-container {
   position: absolute;
   top: 10%;
@@ -334,8 +335,9 @@ if the HTML file loads this CSS file in the first place.
     height: 38%;
     float: right;
   }
-
 }
+
+/* Theme selector for users to switch */
 .global-theme-selector {
   background-color: white;
 }
