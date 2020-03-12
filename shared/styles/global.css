@@ -265,6 +265,18 @@ if the HTML file loads this CSS file in the first place.
   border: 0;
 }
 
+@media only screen and (max-width: 600px) {
+  .note-container {
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 100%;
+    height:90%;
+    border: 0;
+  }
+
+}
+
 .note-container-state-visible {
   z-index: 5000;
 }
