@@ -15,7 +15,7 @@ color: #FFFFFF;
 }
 
 .theme-light .global-hamburger{
-background: #CB6D51;
+background-color: coral;
 }
 
 .theme-dark .global-hamburger {
@@ -23,7 +23,7 @@ background: grey;
 }
 
 .theme-light .global-dropbtn {
-background: #CB6D51;
+background: coral;
 }
 
 .theme-dark .global-dropbtn {

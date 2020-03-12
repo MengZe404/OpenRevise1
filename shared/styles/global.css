@@ -259,10 +259,10 @@ if the HTML file loads this CSS file in the first place.
 /* All notes are here in iframe */
 .note-container {
   position: absolute;
-  top: 10%;
+  top: 11%;
   left: 0%;
   width: 100%;
-  height:90%;
+  height:89%;
   border: 0;
 }
 
