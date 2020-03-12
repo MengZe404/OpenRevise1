@@ -44,7 +44,6 @@ if the HTML file loads this CSS file in the first place.
   top: 0px;
   width: 100%;
   z-index: 3;
-  background-color: black;
 }
 
 /* The logo of the website in the menubar */
@@ -349,5 +348,9 @@ if the HTML file loads this CSS file in the first place.
 }
 
 .global-about-page-link {
+  text-emphasis: none;
+}
+
+.global-pspapers-page-link {
   text-emphasis: none;
 }
