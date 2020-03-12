@@ -348,6 +348,7 @@ if the HTML file loads this CSS file in the first place.
   }
 }
 
+/* Useless */
 .global-setting-list a {
   position: relative;
   color: inherit;
