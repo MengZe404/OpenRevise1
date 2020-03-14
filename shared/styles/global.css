@@ -59,21 +59,6 @@ if the HTML file loads this CSS file in the first place.
   cursor: pointer;
 }
 
-/* If the device is a mobile, collapse the location indicatior */
-
-@media only screen and (max-width: 600px) {
-  .global-menubar-location {
-    display: none;
-  }
-
-  .global-menubar-logo {
-    width: 145px;
-    height: auto;
-    padding: 6px 15px;
-    float: left;
-  }
-}
-
 /* Location indicator, e.g Home, Notes, etc. */
 
 .global-menubar-location {
@@ -94,35 +79,6 @@ if the HTML file loads this CSS file in the first place.
 }
 
 /* The acual hamburger menu itself */
-
-@media only screen and (max-width: 600px) {
-
-  .global-hamburger {
-    z-index: 3000;
-    display: flex;
-    position: fixed;
-    width: 40%;
-    height: 100%;
-    text-align: center;
-    align-items: center;
-    flex-wrap: wrap;
-    opacity: 0.95;
-  }
-
-  .global-hamburger-itemcontainer ul {
-    list-style: none;
-    font-weight: 100;
-  }
-
-  .global-hamburger-close {
-    position: absolute;
-    width: 24px;
-    height: auto;
-    top: 10px;
-    left: 10px;
-    float: left;
-  }
-}
 
 .global-hamburger {
   z-index: 5100;
@@ -153,14 +109,6 @@ if the HTML file loads this CSS file in the first place.
   width: 100%;
   height: 80vh;
   overflow-y: auto;
-}
-
-@media only screen and (max-width: 600px) {
-  .global-hamburger-itemcontainer ul li{
-    list-style: none;
-    font-size: 24px;
-    font-weight: bold;
-  }
 }
 
 .global-hamburger-itemcontainer ul {
@@ -225,19 +173,7 @@ if the HTML file loads this CSS file in the first place.
   z-index: 1;
   opacity: 0.9;
 }
-@media only screen and (max-width: 600px) {
-  .global-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    font-size: 12px;
-    min-width: 100px;
-    text-align: center;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    opacity: 0.9;
-  }
-}
+
 /* Links inside the dropdown */
 .global-dropdown-content a {
   color: black;
@@ -265,63 +201,12 @@ if the HTML file loads this CSS file in the first place.
   border: 0;
 }
 
-@media only screen and (max-width: 600px) {
-  .note-container {
-    position: absolute;
-    top: 10%;
-    left: 0%;
-    width: 100%;
-    height:90%;
-    border: 0;
-  }
-
-}
-
 .note-container-state-visible {
   z-index: 5000;
 }
 
 .note-container-state-hidden {
   display: none;
-}
-
-.global-clicking-space {
-  position: absolute;
-  width: 72%;
-  height: 100%;
-  float: left;
-  z-index: 3500;
-}
-
-.global-clicking-space-1 {
-  position: absolute;
-  width: 40%;
-  left: 60%;
-  top: 70%;
-  height: 30%;
-  float: right;
-  z-index: 10000;
-}
-
-.global-clicking-space-1-state-hidden {
-  display: none;
-  z-index: -1000;
-}
-
-.global-clicking-space-1-state-visible {
-  display: inline;
-  z-index: 10000;
-}
-
-@media only screen and (max-width: 600px) {
-  .global-clicking-space-1 {
-    position: absolute;
-    width: 40%;
-    left: 60%;
-    top: 62%;
-    height: 38%;
-    float: right;
-  }
 }
 
 /* Theme selector for users to switch themes */
@@ -341,7 +226,70 @@ if the HTML file loads this CSS file in the first place.
   text-emphasis: none;
 }
 
+/* Mobile Style */
 @media only screen and (max-width: 600px) {
+  .global-menubar-location {
+    display: none;
+  }
+
+  .global-menubar-logo {
+    width: 145px;
+    height: auto;
+    padding: 6px 15px;
+    float: left;
+  }
+  .global-hamburger {
+    z-index: 3000;
+    display: flex;
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: 0.95;
+  }
+
+  .global-hamburger-itemcontainer ul {
+    list-style: none;
+    font-weight: 100;
+  }
+
+  .global-hamburger-close {
+    position: absolute;
+    width: 24px;
+    height: auto;
+    top: 10px;
+    left: 10px;
+    float: left;
+  }
+
+  .global-hamburger-itemcontainer ul li{
+    list-style: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .global-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    font-size: 12px;
+    min-width: 100px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0.9;
+  }
+
+  .note-container {
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 100%;
+    height:90%;
+    border: 0;
+  }
+  
   .global-theme-option {
     font-size: 4px;
     font: initial;
@@ -360,10 +308,34 @@ if the HTML file loads this CSS file in the first place.
   background-color: #7289DA;
 }
 
-.global-about-page-link {
+.global-about-page-link .global-pspapers-page-link .global-materials-page-link {
   text-emphasis: none;
 }
 
-.global-pspapers-page-link {
-  text-emphasis: none;
+.global-clicking-space {
+  position: absolute;
+  width: 72%;
+  height: 100%;
+  float: left;
+  z-index: 3500;
+}
+
+.global-clicking-space-1 {
+  position: absolute;
+  width: 40%;
+  left: 60%;
+  top: 80%;
+  height: 20%;
+  float: right;
+  z-index: 10000;
+}
+
+.global-clicking-space-1-state-hidden {
+  display: none;
+  z-index: -1000;
+}
+
+.global-clicking-space-1-state-visible {
+  display: inline;
+  z-index: 10000;
 }

@@ -62,6 +62,19 @@ document.querySelector(".global-pspapers-page-link").addEventListener("click", (
   document.querySelector(".global-theme-selector").classList.add("global-theme-selector-state-hidden");
 });
 
+document.querySelector(".global-materials-page-link").addEventListener("click", () => {
+  document.querySelector(".note-container").classList.remove("note-container-state-hidden");
+  document.querySelector(".note-container").classList.add("note-container-state-visible");
+  document.querySelector(".global-hamburger").classList.add("global-hamburger-state-hidden");
+  document.querySelector(".global-hamburger").classList.remove("global-hamburger-state-visible");
+  document.querySelector(".github-fork-ribbon").classList.remove("github-fork-ribbon-state-visible");
+  document.querySelector(".github-fork-ribbon").classList.add("github-fork-ribbon-state-hidden");
+  document.querySelector(".global-clicking-space-1").classList.remove("global-clicking-space-1-state-visible");
+  document.querySelector(".global-clicking-space-1").classList.add("global-clicking-space-1-state-hidden");
+  document.querySelector(".global-theme-selector").classList.remove("global-theme-selector-state-visible");
+  document.querySelector(".global-theme-selector").classList.add("global-theme-selector-state-hidden");
+});
+
 // Set the date we're counting down to
 const completionDate = new Date("May 1, 2020 00:00:00").getTime();
 
