@@ -239,7 +239,7 @@ if the HTML file loads this CSS file in the first place.
     float: left;
   }
   .global-hamburger {
-    z-index: 3000;
+    z-index: 5100;
     display: flex;
     position: fixed;
     width: 40%;
