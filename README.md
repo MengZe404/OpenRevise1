@@ -37,14 +37,14 @@
 
 # Screen-shoots
 
-![Screenshot from 2020-03-14 12-50-04](/home/hong/Pictures/Screenshot from 2020-03-14 12-50-04.png)
+![Dark Theme](shared/pictures/dark_theme.png)
 
 **Dark Theme**
 
-![Screenshot from 2020-03-14 12-50-14](/home/hong/Pictures/Screenshot from 2020-03-14 12-50-14.png)
+![Light Theme](shared/pictures/light_theme.png)
 
 **Light Theme**
 
-![Screenshot from 2020-03-14 12-50-22](/home/hong/Pictures/Screenshot from 2020-03-14 12-50-22.png)
+![Note Viewer](shared/pictures/note_viewer.png)
 
 **Note Viewer**
