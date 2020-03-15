@@ -36,6 +36,8 @@ document.querySelector(".global-clicking-space-1").addEventListener("click", () 
   document.querySelector(".github-fork-ribbon").classList.remove("github-fork-ribbon-state-hidden");
   document.querySelector(".global-theme-selector").classList.remove("global-theme-selector-state-visible");
   document.querySelector(".global-theme-selector").classList.add("global-theme-selector-state-hidden");
+  document.querySelector(".global-clicking-space-1").classList.remove("global-clicking-space-1-state-visible");
+  document.querySelector(".global-clicking-space-1").classList.add("global-clicking-space-1-state-hidden");
 });
 
 document.querySelector(".global-about-page-link").addEventListener("click", () => {
