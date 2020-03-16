@@ -1,6 +1,6 @@
 "use strict"
 function switchTheme() {
-    localStorage.setItem("OpenReviseTheme", document.getElementById("theme-selector").value);
+    // localStorage.setItem("OpenReviseTheme", document.getElementById("theme-selector").value);
     if (!localStorage.getItem("OpenReviseTheme")) {
         localStorage.setItem("OpenReviseTheme", "dark");
     }
@@ -13,6 +13,6 @@ function switchTheme() {
     }
 }
 
-document.getElementById("theme-selector").onchange = (e) => {
-    switchTheme();
-}
+// document.getElementById("theme-selector").onchange = (e) => {
+//     switchTheme();
+// }
